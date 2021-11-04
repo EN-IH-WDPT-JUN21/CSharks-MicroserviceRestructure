@@ -116,9 +116,9 @@ AccountDTO {
     employeeCount: Integer,
     city: String,
     country: String
-}
+}</code>
 
-ContactAndOpportunityDTO {
+<code>ContactAndOpportunityDTO {
 
   name: String;
   phoneNumber: String;
@@ -132,9 +132,9 @@ ContactAndOpportunityDTO {
 
   salesRepId: Long;
   accountId: Long;
-} 
+} </code>
 
-ContactAndOpportunityAndAccountDTO {
+<code>ContactAndOpportunityAndAccountDTO {
 
   name: String;
   phoneNumber: String;
@@ -154,9 +154,9 @@ ContactAndOpportunityAndAccountDTO {
   employeeCount: Integer;
   city: String;
   country: String;
-} 
+} </code>
 
-ContactDTO {
+<code>ContactDTO {
   name: String;
   phoneNumber: String;
   email: String;
@@ -164,18 +164,18 @@ ContactDTO {
   salesRepId: Long;
   accountId: Long;
   id: Long;
-} 
+} </code>
 
-LeadDTO {
+<code>LeadDTO {
   id: Long;
   name: String;
   phoneNumber: String;
   email: String;
   companyName: String;
   salesRep: Long;
-} 
+} </code>
 
-LeadConvertDTO {
+<code>LeadConvertDTO {
   product: String;
   quantity: Integer;
   accountId: Long;
@@ -183,26 +183,26 @@ LeadConvertDTO {
   employeeCount: Integer;
   city: String;
   country: String;
-} 
+} </code>
 
-NewLeadDTO {
+<code>NewLeadDTO {
   name: String;
   phoneNumber: String;
   email: String;
   companyName: String;
   salesRep: Long;
-} 
+} </code>
 
-OpportunityDTO {
+<code>OpportunityDTO {
   status: Status;
   product: Truck;
   quantity: Integer;
   decisionMaker: Long;
   accountId: Long;
   salesRepId: Long;
-} 
+} </code>
 
-SalesRepDTO {
+<code>SalesRepDTO {
   id: Long;
   repName: String;
 } 
