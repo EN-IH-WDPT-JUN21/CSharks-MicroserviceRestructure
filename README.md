@@ -27,6 +27,11 @@ Code for application properties
 
 <h3>SETUP - Local Method</h3>
 
+* Clone the repository
+* Open each service, right-click on the pom.xml file and select "Add as Maven project"
+* Select "Trust Project"
+* 
+
 <h3>Services: </h3>
 
 - Gateway - https://github.com/NatNorb/gateway
