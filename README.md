@@ -110,18 +110,13 @@ Remember to make the application as robust as possible.
 <h3>DTOs: </h3>
 
 <code>AccountDTO {
-
-    id: Long;
-    
-    industry: String;
-    
-    employeeCount: Integer;
-    
-    city: String;
-    
-    country: String;
+    id: Long,
+    industry: String,
+    employeeCount: Integer,
+    city: String,
+    country: String
 } 
-
+</code>
 
 ContactAndOpportunityDTO {
     # Contact dataDTO
@@ -147,7 +142,7 @@ ContactAndOpportunityDTO {
     
     accountId: Long;
 } 
-</code>
+
 
 `ContactAndOpportunityAndAccountDTO {
     # Contact data
