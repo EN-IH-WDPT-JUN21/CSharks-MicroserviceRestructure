@@ -24,6 +24,36 @@ Remember to make the application as robust as possible.
 
 * Use this gateway as normal: https://cshark-h4.herokuapp.com
 
+| Route Type | Route | Input Required | Service Called |
+| - | - | - | - |
+| POST | "/create/contact" | ContactDTO | CREATE-SERVICE |
+| POST | "/create/opportunity" | OpportunityDTO | CREATE-SERVICE |
+| POST | "/create/lead" | LeadDTO | CREATE-SERVICE |
+| POST | "/create/account" | AccountDTO | CREATE-SERVICE |
+| POST | "/create/salesrep" | SalesRepDTO | CREATE-SERVICE |
+| POST | "/create/contact-opportunity" | ContactAndOpportunityDTO | CREATE-SERVICE |
+| POST | "/create/contact-opportunity-account" | ContactAndOpportunityAndAccountDTO | CREATE-SERVICE |
+| POST | "/convert/lead{id}" | Long: leadId, LeadConvertDTO | CONVERT-SERVICE |
+| PUT | "/convert/opportunity/{id}/{status}" | Long: opportunityId, String: status | CONVERT-SERVICE |
+| GET | "/report/bySalesRep/{dataType}" | String: dataType | REPORT-SERVICE |
+| GET | "/report/byProduct/{dataType}" | String: dataType | REPORT-SERVICE |
+| GET | "/report/byCountry/{dataType}" | String: dataType | REPORT-SERVICE |
+| GET | "/report/byCity/{dataType}" | String: dataType | REPORT-SERVICE |
+| GET | "/report/byIndustry/{dataType}" | String: dataType | REPORT-SERVICE |
+| GET | "/report/byEmployeeCount/{reportType}" | String: reportType | REPORT-SERVICE |
+| GET | "/report/byEmployeeCount/{reportType}" | String: reportType | REPORT-SERVICE |
+| GET | "/report/oppsByAccount/{dataType}" | String: dataType | REPORT-SERVICE |
+| GET | "/leads" |  | LEAD-SERVICE |
+| GET | "/leads/{id}" | long: id | LEAD-SERVICE |
+| GET | "/accounts" |  | ACCOUNT-SERVICE |
+| GET | "/accounts/{id}" | Long: id | ACCOUNT-SERVICE |
+| GET | "/contacts" |  | CONTACT-SERVICE |
+| GET | "/contacts/{id}" | Long: id | CONTACT-SERVICE |
+| GET | "/opps/all" |  | OPPORTUNITY-SERVICE |
+| GET | "/opps/{id}" | Long: id | OPPORTUNITY-SERVICE |
+| GET | "/salesrep" |  | SALESREP-SERVICE |
+| GET | "/salesrep/{id}" | Long: id | SALESREP-SERVICE |
+
 <h3>SETUP - Local Method</h3>
 
 * Clone the repository
@@ -56,10 +86,10 @@ Remember to make the application as robust as possible.
 | 8600 | GET | "/accounts/{id}" | Long: id | ACCOUNT-SERVICE |
 | 8080 | GET | "/contacts" |  | CONTACT-SERVICE |
 | 8080 | GET | "/contacts/{id}" | Long: id | CONTACT-SERVICE |
-
-
-| Route 1 | "/opps" | Unput | OPPORTUNITY-SERVICE |
-| Route 1 | "/salesrep" | Unput | SALESREP-SERVICE |
+| 8200 | GET | "/opps/all" |  | OPPORTUNITY-SERVICE |
+| 8200 | GET | "/opps/{id}" | Long: id | OPPORTUNITY-SERVICE |
+| 8650 | GET | "/salesrep" |  | SALESREP-SERVICE |
+| 8650 | GET | "/salesrep/{id}" | Long: id | SALESREP-SERVICE |
 
 
 <h3>Services: </h3>
@@ -85,7 +115,7 @@ Remember to make the application as robust as possible.
     employeeCount: Integer;
     city: String;
     country: String;
-}`
+} `
 
 `ContactAndOpportunityDTO {
     // Contact dataDTO
@@ -103,7 +133,7 @@ Remember to make the application as robust as possible.
     // Common data
     salesRepId: Long;
     accountId: Long;
-}`
+} `
 
 `ContactAndOpportunityAndAccountDTO {
     // Contact data
@@ -128,7 +158,7 @@ Remember to make the application as robust as possible.
     employeeCount: Integer;
     city: String;
     country: String;
-}`
+} `
 
 `ContactDTO {
     name: String;
@@ -138,7 +168,7 @@ Remember to make the application as robust as possible.
     salesRepId: Long;
     accountId: Long;
     id: Long;
-}`
+} `
 
 `LeadDTO {
   id: Long;
@@ -147,7 +177,7 @@ Remember to make the application as robust as possible.
   email: String;
   companyName: String;
   salesRep: Long;
-}`
+} `
 
 `LeadConvertDTO {
   product: String;
@@ -157,7 +187,7 @@ Remember to make the application as robust as possible.
   employeeCount: Integer;
   city: String;
   country: String;
-}`
+} `
 
 `NewLeadDTO {
   name: String;
@@ -165,7 +195,7 @@ Remember to make the application as robust as possible.
   email: String;
   companyName: String;
   salesRep: Long;
-}`
+} `
 
 `OpportunityDTO {
   status: Status;
@@ -174,9 +204,9 @@ Remember to make the application as robust as possible.
   decisionMaker: Long;
   accountId: Long;
   salesRepId: Long;
-}`
+} `
 
 `SalesRepDTO {
   id: Long;
   repName: String;
-}`
+} `
