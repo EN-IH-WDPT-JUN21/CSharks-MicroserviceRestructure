@@ -109,16 +109,15 @@ Remember to make the application as robust as possible.
 
 <h3>DTOs: </h3>
 
-<code>AccountDTO {
+`AccountDTO {
     id: Long,
     industry: String,
     employeeCount: Integer,
     city: String,
     country: String
-} 
-</code>
+}`
 
-ContactAndOpportunityDTO {
+`ContactAndOpportunityDTO {
     # Contact dataDTO
     name: String;
     
