@@ -120,43 +120,35 @@ AccountDTO {
 
 ContactAndOpportunityDTO {
 
-  _Contact dataDTO_
   name: String;
   phoneNumber: String;
   email: String;
   companyName: String;
 
-  _OpportunityDTO data_
   status: Status;
   product: Truck;
   quantity: Integer;
   decisionMaker: Long;
 
-  _Common data_
   salesRepId: Long;
   accountId: Long;
 } 
 
 ContactAndOpportunityAndAccountDTO {
 
-  _Contact data_
   name: String;
   phoneNumber: String;
   email: String;
   companyName: String;
 
- _Opportunity data_
   status: Status;
   product: Truck;
   quantity: Integer;
   decisionMaker: Long;
 
-  _Common data_
   salesRepId: Long;
   accountId: Long;
     
-
-  _Account data_
   id: Long;
   industry: String;
   employeeCount: Integer;
