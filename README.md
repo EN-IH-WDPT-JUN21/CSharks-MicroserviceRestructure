@@ -22,7 +22,7 @@ Remember to make the application as robust as possible.
 
 <h3>SETUP - Cloud Method</h3>
 
-* Visit: https://cshark-h4.herokuapp.com
+* Use this gateway as normal: https://cshark-h4.herokuapp.com
 
 <h3>SETUP - Local Method</h3>
 
@@ -31,9 +31,35 @@ Remember to make the application as robust as possible.
 * Select "Trust Project"
 * Run each service
 
-| Route Type | Route | Input Required |
-| - | - | - |
-| Route 1 | Route | Unput |
+| Port | Route Type | Route | Input Required | Service Called |
+| - | - | - | - | - |
+| 8700 | POST | "/create/contact" | ContactDTO | CREATE-SERVICE |
+| 8700 | POST | "/create/opportunity" | OpportunityDTO | CREATE-SERVICE |
+| 8700 | POST | "/create/lead" | LeadDTO | CREATE-SERVICE |
+| 8700 | POST | "/create/account" | AccountDTO | CREATE-SERVICE |
+| 8700 | POST | "/create/salesrep" | SalesRepDTO | CREATE-SERVICE |
+| 8700 | POST | "/create/contact-opportunity" | ContactAndOpportunityDTO | CREATE-SERVICE |
+| 8700 | POST | "/create/contact-opportunity-account" | ContactAndOpportunityAndAccountDTO | CREATE-SERVICE |
+| 8110 | POST | "/convert/lead{id}" | Long: leadId, LeadConvertDTO | CONVERT-SERVICE |
+| 8110 | PUT | "/convert/opportunity/{id}/{status}" | Long: opportunityId, String: status | CONVERT-SERVICE |
+| 8750 | GET | "/report/bySalesRep/{dataType}" | String: dataType | REPORT-SERVICE |
+| 8750 | GET | "/report/byProduct/{dataType}" | String: dataType | REPORT-SERVICE |
+| 8750 | GET | "/report/byCountry/{dataType}" | String: dataType | REPORT-SERVICE |
+| 8750 | GET | "/report/byCity/{dataType}" | String: dataType | REPORT-SERVICE |
+| 8750 | GET | "/report/byIndustry/{dataType}" | String: dataType | REPORT-SERVICE |
+| 8750 | GET | "/report/byEmployeeCount/{reportType}" | String: reportType | REPORT-SERVICE |
+| 8750 | GET | "/report/byEmployeeCount/{reportType}" | String: reportType | REPORT-SERVICE |
+| 8750 | GET | "/report/oppsByAccount/{dataType}" | String: dataType | REPORT-SERVICE |
+| 8100 | GET | "/leads" |  | LEAD-SERVICE |
+| 8100 | GET | "/leads/{id}" | long: id | LEAD-SERVICE |
+| 8600 | GET | "/accounts" |  | ACCOUNT-SERVICE |
+| 8600 | GET | "/accounts/{id}" | Long: id | ACCOUNT-SERVICE |
+| 8080 | GET | "/contacts" |  | CONTACT-SERVICE |
+| 8080 | GET | "/contacts/{id}" | Long: id | CONTACT-SERVICE |
+
+
+| Route 1 | "/opps" | Unput | OPPORTUNITY-SERVICE |
+| Route 1 | "/salesrep" | Unput | SALESREP-SERVICE |
 
 
 <h3>Services: </h3>
@@ -49,3 +75,108 @@ Remember to make the application as robust as possible.
 
 - Convert Service - https://github.com/Joaodss/h4-convert-service
 - Reporting Service - https://github.com/MaddyKilmurray/CSharks-ReportingService
+
+
+<h3>DTOs: </h3>
+
+`AccountDTO {
+    id: Long;
+    industry: String;
+    employeeCount: Integer;
+    city: String;
+    country: String;
+}`
+
+`ContactAndOpportunityDTO {
+    // Contact dataDTO
+    name: String;
+    phoneNumber: String;
+    email: String;
+    companyName: String;
+
+    // OpportunityDTO data
+    status: Status;
+    product: Truck;
+    quantity: Integer;
+    decisionMaker: Long;
+
+    // Common data
+    salesRepId: Long;
+    accountId: Long;
+}`
+
+`ContactAndOpportunityAndAccountDTO {
+    // Contact data
+    name: String;
+    phoneNumber: String;
+    email: String;
+    companyName: String;
+
+    // Opportunity data
+    status: Status;
+    product: Truck;
+    quantity: Integer;
+    decisionMaker: Long;
+
+    // Common data
+    salesRepId: Long;
+    accountId: Long;
+    
+    // Account data
+    id: Long;
+    industry: String;
+    employeeCount: Integer;
+    city: String;
+    country: String;
+}`
+
+`ContactDTO {
+    name: String;
+    phoneNumber: String;
+    email: String;
+    companyName: String;
+    salesRepId: Long;
+    accountId: Long;
+    id: Long;
+}`
+
+`LeadDTO {
+  id: Long;
+  name: String;
+  phoneNumber: String;
+  email: String;
+  companyName: String;
+  salesRep: Long;
+}`
+
+`LeadConvertDTO {
+  product: String;
+  quantity: Integer;
+  accountId: Long;
+  industry: String;
+  employeeCount: Integer;
+  city: String;
+  country: String;
+}`
+
+`NewLeadDTO {
+  name: String;
+  phoneNumber: String;
+  email: String;
+  companyName: String;
+  salesRep: Long;
+}`
+
+`OpportunityDTO {
+  status: Status;
+  product: Truck;
+  quantity: Integer;
+  decisionMaker: Long;
+  accountId: Long;
+  salesRepId: Long;
+}`
+
+`SalesRepDTO {
+  id: Long;
+  repName: String;
+}`
