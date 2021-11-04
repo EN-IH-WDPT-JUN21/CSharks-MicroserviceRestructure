@@ -119,37 +119,30 @@ AccountDTO {
 }</code>
 
 <code>ContactAndOpportunityDTO {
-
   name: String;
   phoneNumber: String;
   email: String;
   companyName: String;
-
   status: Status;
   product: Truck;
   quantity: Integer;
   decisionMaker: Long;
-
   salesRepId: Long;
   accountId: Long;
 } </code>
 
 <code>ContactAndOpportunityAndAccountDTO {
-
   name: String;
   phoneNumber: String;
   email: String;
   companyName: String;
-
   status: Status;
   product: Truck;
   quantity: Integer;
   decisionMaker: Long;
-
   salesRepId: Long;
   accountId: Long;
-    
-  id: Long;
+  id: Long; -- account id
   industry: String;
   employeeCount: Integer;
   city: String;
