@@ -109,7 +109,7 @@ Remember to make the application as robust as possible.
 
 <h3>DTOs: </h3>
 
-`AccountDTO {
+<code>AccountDTO {
 
     id: Long;
     
@@ -121,9 +121,9 @@ Remember to make the application as robust as possible.
     
     country: String;
 } 
-`
 
-`ContactAndOpportunityDTO {
+
+ContactAndOpportunityDTO {
     # Contact dataDTO
     name: String;
     
@@ -147,7 +147,7 @@ Remember to make the application as robust as possible.
     
     accountId: Long;
 } 
-`
+</code>
 
 `ContactAndOpportunityAndAccountDTO {
     # Contact data
