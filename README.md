@@ -17,7 +17,7 @@ Remember to make the application as robust as possible.
 
 <h3>New Project Structure: </h3>
 
-<img src="image.png" />
+<img src="Project_Diagram.PNG" />
 
 
 <h3>SETUP - Cloud Method</h3>
