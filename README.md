@@ -109,7 +109,8 @@ Remember to make the application as robust as possible.
 
 <h3>DTOs: </h3>
 
-<code>AccountDTO {
+<code> 
+AccountDTO {
     id: Long,
     industry: String,
     employeeCount: Integer,
@@ -118,41 +119,44 @@ Remember to make the application as robust as possible.
 }
 
 ContactAndOpportunityDTO {
-  # Contact dataDTO
+
+  _Contact dataDTO_
   name: String;
   phoneNumber: String;
   email: String;
   companyName: String;
 
-  # OpportunityDTO data
+  _OpportunityDTO data_
   status: Status;
   product: Truck;
   quantity: Integer;
   decisionMaker: Long;
 
-  # Common data
+  _Common data_
   salesRepId: Long;
   accountId: Long;
 } 
 
 ContactAndOpportunityAndAccountDTO {
-  # Contact data
+
+  _Contact data_
   name: String;
   phoneNumber: String;
   email: String;
   companyName: String;
 
-  # Opportunity data
+ _Opportunity data_
   status: Status;
   product: Truck;
   quantity: Integer;
   decisionMaker: Long;
 
-  # Common data
+  _Common data_
   salesRepId: Long;
   accountId: Long;
     
-  # Account data
+
+  _Account data_
   id: Long;
   industry: String;
   employeeCount: Integer;
@@ -211,3 +215,5 @@ SalesRepDTO {
   repName: String;
 } 
 </code>
+
+
