@@ -18,9 +18,9 @@ public class GatewayConfiguration {
                 .route(p -> p.path("/report/**")
                         .uri("lb://REPORTING-SERVICE"))
 
-                .route(p -> p.path("/lead**")
+                .route(p -> p.path("/leads**")
                         .uri("lb://LEAD-SERVICE"))
-                .route(p -> p.path("/lead/**")
+                .route(p -> p.path("/leads/**")
                         .uri("lb://LEAD-SERVICE"))
 
                 .route(p -> p.path("/accounts/**")
