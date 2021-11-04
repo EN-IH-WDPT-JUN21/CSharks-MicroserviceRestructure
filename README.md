@@ -1,23 +1,23 @@
 
-Existing Project Structure: 
+<h3>Existing Project Structure: </h3>
 
 <a href="https://github.com/EN-IH-WDPT-JUN21/Stolen-Name-LBL-Trucking_Company_Homework-3"> Stolen-Name-LBL-Trucking_Company_Homework-3 </a>
 
 <img src="Class_diagram_LBL-Page-1.png" />
 
-New Project Structure: 
+<h3>New Project Structure: </h3>
 
 <img src="image.png" />
 
 
-SETUP - Cloud Method
+<h3>SETUP - Cloud Method</h3>
 
 Code for application properties
 
 
-SETUP - Local Method
+<h3>SETUP - Local Method</h3>
 
-Services: 
+<h3>Services: </h3>
 
 - Gateway - https://github.com/NatNorb/gateway
 
