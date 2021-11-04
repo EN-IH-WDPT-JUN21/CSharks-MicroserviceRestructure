@@ -22,8 +22,7 @@ Remember to make the application as robust as possible.
 
 <h3>SETUP - Cloud Method</h3>
 
-Code for application properties
-
+* Visit: https://cshark-h4.herokuapp.com
 
 <h3>SETUP - Local Method</h3>
 
@@ -32,9 +31,15 @@ Code for application properties
 * Select "Trust Project"
 * Run each service
 
+| Route Type | Route | Input Required |
+| - | - | - |
+| Route 1 | Route | Unput |
+
+
 <h3>Services: </h3>
 
 - Gateway - https://github.com/NatNorb/gateway
+- Discovery - https://github.com/jegor-chomczuk/discovery-service
 
 - Account Service - https://github.com/MaddyKilmurray/CSharks-AccountMicroservice
 - SalesRep Service - https://github.com/MaddyKilmurray/CSharks-SalesRepMicroservice
