@@ -1,5 +1,6 @@
-<h3>Project Specification</h3>
-<h2>Requirements </h2>
+<h1>Project Specification</h1>
+
+<h3>Requirements </h3>
 
 As a team, decide the best microservice architecture. Consider where edge services might be advantageous and necessary individual services. Make sure that you are designing together how the application will be broken into services before starting.
 
