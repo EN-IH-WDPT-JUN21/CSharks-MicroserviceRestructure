@@ -109,7 +109,7 @@ Remember to make the application as robust as possible.
 
 <h3>DTOs: </h3>
 
-`AccountDTO {
+<code>`AccountDTO {
     id: Long,
     industry: String,
     employeeCount: Integer,
@@ -262,4 +262,4 @@ Remember to make the application as robust as possible.
   
   repName: String;
 } 
-`
+`</code>
