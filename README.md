@@ -115,7 +115,8 @@ Remember to make the application as robust as possible.
     employeeCount: Integer;
     city: String;
     country: String;
-} `
+} 
+`
 
 `ContactAndOpportunityDTO {
     // Contact dataDTO
@@ -133,32 +134,34 @@ Remember to make the application as robust as possible.
     // Common data
     salesRepId: Long;
     accountId: Long;
-} `
+} 
+`
 
 `ContactAndOpportunityAndAccountDTO {
-    // Contact data
+    # Contact data
     name: String;
     phoneNumber: String;
     email: String;
     companyName: String;
 
-    // Opportunity data
+    # Opportunity data
     status: Status;
     product: Truck;
     quantity: Integer;
     decisionMaker: Long;
 
-    // Common data
+    # Common data
     salesRepId: Long;
     accountId: Long;
     
-    // Account data
+    # Account data
     id: Long;
     industry: String;
     employeeCount: Integer;
     city: String;
     country: String;
-} `
+} 
+`
 
 `ContactDTO {
     name: String;
@@ -168,7 +171,8 @@ Remember to make the application as robust as possible.
     salesRepId: Long;
     accountId: Long;
     id: Long;
-} `
+} 
+`
 
 `LeadDTO {
   id: Long;
@@ -177,7 +181,8 @@ Remember to make the application as robust as possible.
   email: String;
   companyName: String;
   salesRep: Long;
-} `
+} 
+`
 
 `LeadConvertDTO {
   product: String;
@@ -187,7 +192,8 @@ Remember to make the application as robust as possible.
   employeeCount: Integer;
   city: String;
   country: String;
-} `
+} 
+`
 
 `NewLeadDTO {
   name: String;
@@ -195,7 +201,8 @@ Remember to make the application as robust as possible.
   email: String;
   companyName: String;
   salesRep: Long;
-} `
+} 
+`
 
 `OpportunityDTO {
   status: Status;
@@ -204,9 +211,11 @@ Remember to make the application as robust as possible.
   decisionMaker: Long;
   accountId: Long;
   salesRepId: Long;
-} `
+} 
+`
 
 `SalesRepDTO {
   id: Long;
   repName: String;
-} `
+} 
+`
