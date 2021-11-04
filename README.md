@@ -109,157 +109,105 @@ Remember to make the application as robust as possible.
 
 <h3>DTOs: </h3>
 
-<code>`AccountDTO {
+<code>AccountDTO {
     id: Long,
     industry: String,
     employeeCount: Integer,
     city: String,
     country: String
-}`
+}
 
-`ContactAndOpportunityDTO {
-    # Contact dataDTO
-    name: String;
-    
-    phoneNumber: String;
-    
-    email: String;
-    
-    companyName: String;
-
-    # OpportunityDTO data
-    status: Status;
-    
-    product: Truck;
-    
-    quantity: Integer;
-    
-    decisionMaker: Long;
-
-    # Common data
-    salesRepId: Long;
-    
-    accountId: Long;
-} 
-
-
-`ContactAndOpportunityAndAccountDTO {
-    # Contact data
-    name: String;
-    
-    phoneNumber: String;
-    
-    email: String;
-    
-    companyName: String;
-
-    # Opportunity data
-    status: Status;
-    
-    product: Truck;
-    
-    quantity: Integer;
-    
-    decisionMaker: Long;
-
-    # Common data
-    salesRepId: Long;
-    
-    accountId: Long;
-    
-    # Account data
-    id: Long;
-    
-    industry: String;
-    
-    employeeCount: Integer;
-    
-    city: String;
-    
-    country: String;
-} 
-`
-
-`ContactDTO {
-    name: String;
-    
-    phoneNumber: String;
-    
-    email: String;
-    
-    companyName: String;
-    
-    salesRepId: Long;
-    
-    accountId: Long;
-    
-    id: Long;
-} 
-`
-
-`LeadDTO {
-  id: Long;
-  
+ContactAndOpportunityDTO {
+  # Contact dataDTO
   name: String;
-  
   phoneNumber: String;
-  
   email: String;
-  
   companyName: String;
-  
-  salesRep: Long;
-} 
-`
 
-`LeadConvertDTO {
-  product: String;
-  
+  # OpportunityDTO data
+  status: Status;
+  product: Truck;
   quantity: Integer;
-  
+  decisionMaker: Long;
+
+  # Common data
+  salesRepId: Long;
   accountId: Long;
-  
+} 
+
+ContactAndOpportunityAndAccountDTO {
+  # Contact data
+  name: String;
+  phoneNumber: String;
+  email: String;
+  companyName: String;
+
+  # Opportunity data
+  status: Status;
+  product: Truck;
+  quantity: Integer;
+  decisionMaker: Long;
+
+  # Common data
+  salesRepId: Long;
+  accountId: Long;
+    
+  # Account data
+  id: Long;
   industry: String;
-  
   employeeCount: Integer;
-  
   city: String;
-  
   country: String;
 } 
-`
 
-`NewLeadDTO {
+ContactDTO {
   name: String;
-  
   phoneNumber: String;
-  
   email: String;
-  
   companyName: String;
-  
+  salesRepId: Long;
+  accountId: Long;
+  id: Long;
+} 
+
+LeadDTO {
+  id: Long;
+  name: String;
+  phoneNumber: String;
+  email: String;
+  companyName: String;
   salesRep: Long;
 } 
-`
 
-`OpportunityDTO {
-  status: Status;
-  
-  product: Truck;
-  
+LeadConvertDTO {
+  product: String;
   quantity: Integer;
-  
-  decisionMaker: Long;
-  
   accountId: Long;
-  
+  industry: String;
+  employeeCount: Integer;
+  city: String;
+  country: String;
+} 
+
+NewLeadDTO {
+  name: String;
+  phoneNumber: String;
+  email: String;
+  companyName: String;
+  salesRep: Long;
+} 
+
+OpportunityDTO {
+  status: Status;
+  product: Truck;
+  quantity: Integer;
+  decisionMaker: Long;
+  accountId: Long;
   salesRepId: Long;
 } 
-`
 
-`SalesRepDTO {
+SalesRepDTO {
   id: Long;
-  
   repName: String;
 } 
-`</code>
+</code>
