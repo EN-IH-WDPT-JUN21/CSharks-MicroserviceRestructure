@@ -30,7 +30,7 @@ Code for application properties
 * Clone the repository
 * Open each service, right-click on the pom.xml file and select "Add as Maven project"
 * Select "Trust Project"
-* 
+* Run each service
 
 <h3>Services: </h3>
 
