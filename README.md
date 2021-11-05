@@ -5,11 +5,10 @@
 1. [**Requirements**](#Requirements)
 2. [**Existing Project Structure**](#Existing-Project-Structure)
 3. [**New Project Structure**](#New-Project-Structure)
-4. [**SETUP - Cloud Method**](#SETUP_-_Cloud-Method)
-5. [**SETUP - Local Method**](#SETUP_-_Local-Method)
+4. [**SETUP: Cloud Method**](#SETUP:-Cloud-Method)
+5. [**SETUP: Local Method**](#SETUP:-Local-Method)
 6. [**Services**](#Services)
 7. [**DTOs**](#DTOs)
-8. [**Class Diagram**](#Class-Diagram)
 
 ## Requirements
 
@@ -32,7 +31,7 @@ Remember to make the application as robust as possible.
 
 <img src="Project_Diagram.PNG" />
 
-## SETUP - Cloud Method
+## SETUP: Cloud Method
 
 * Use this gateway as normal: https://cshark-h4.herokuapp.com
 * When requesting from the cloud gateway, sometimes it will take a few seconds to initialize all the services. Please be
@@ -85,7 +84,7 @@ password: admin
 | GET        | "/salesrep"                            |                                     | SALESREP-SERVICE    |
 | GET        | "/salesrep/{id}"                       | Long: id                            | SALESREP-SERVICE    |
 
-## SETUP - Local Method
+## SETUP: Local Method
 
 * Clone the repository
 * Open each service, right-click on the pom.xml file and select "Add as Maven project"
@@ -139,7 +138,7 @@ password: admin
 | 8650 | GET        | "/salesrep"                            |                                     | SALESREP-SERVICE    |
 | 8650 | GET        | "/salesrep/{id}"                       | Long: id                            | SALESREP-SERVICE    |
 
-## Services:
+## Services
 
 - Gateway - https://github.com/NatNorb/gateway
 - Discovery - https://github.com/jegor-chomczuk/discovery-service
