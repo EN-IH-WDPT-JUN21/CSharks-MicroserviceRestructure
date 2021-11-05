@@ -5,10 +5,10 @@
 1. [**Requirements**](#Requirements)
 2. [**Existing Project Structure**](#Existing-Project-Structure)
 3. [**New Project Structure**](#New-Project-Structure)
-4. [**SETUP - Cloud Method**](#SETUP---Cloud Method)
-5. [**SETUP - Local Method**](#SETUP---Local Method)
-6. [**Services**](#Services:)
-7. [**DTOs**](#DTOs:)
+4. [**SETUP - Cloud Method**](#SETUP-Cloud Method)
+5. [**SETUP - Local Method**](#SETUP-Local Method)
+6. [**Services**](#Services)
+7. [**DTOs**](#DTOs)
 8. [**Class Diagram**](#Class-Diagram)
 
 ## Requirements
