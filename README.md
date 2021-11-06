@@ -149,6 +149,7 @@ password: admin
 - Lead Service - https://github.com/Joaodss/h4-lead-service
 - Convert Service - https://github.com/Joaodss/h4-convert-service
 - Reporting Service - https://github.com/MaddyKilmurray/CSharks-ReportingService
+- Create Service - https://github.com/jegor-chomczuk/create-service
 
 ## DTOs
 
